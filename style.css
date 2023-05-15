@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;400;700&display=swap');
+
+:root {
+    --cor-fundo: #536162;
+    --cor-primaria: #E5E5CB;
+    --cor-secundaria: #D5CEA3;
+    --fonte-principal: 'Ysabeau', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#apresentacao h1 {
+    color: var(--cor-secundaria);
+}
+
+#apresentacao h2 {
+    color: var(--cor-primaria);
+}
+
+#sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#sobre-mim h1 {
+    font-size: 1.3rem;
+    font-weight: bold 400;
+    color: var(--cor-secundaria);
+    padding: 30px 0;
+}
+
+#sobre-mim p {
+    font-size: 1.1rem;
+    font-weight: bold 100;
+    color: var(--cor-primaria);
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.midias {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+}
+
+.btn-midias {
+    display: flex;
+    gap: 5vw;
+    padding: 0 10px;
+    color: var(--cor-secundaria);
+}
+
+.btn-midias a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 20px;
+    padding: 8px 24px;
+    gap: 2vw;
+}
+
+.fa-brands {
+    color: var(--cor-secundaria);
+    font-size: 24px;
+}
+
+
+.certificados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 20px;
+    padding: 8px 24px;
+    gap: 2vh;
+}
+
+.fa-arrow-right {
+    font-size: 24px;
+}
+
+.rodape {
+    display: flex;
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+#sobre-mim p {
+    padding: 0 40px;
+}
+
+.btn-midias a {
+    gap: 10px
+}
+
+.certificados {
+    gap: 10px;
+}
+
+.rodape{
+    font-size: 1.1rem;
+}
+}
+
+@media (min-width: 1024px) {
+#sobre-mim p {
+    padding: 0 100px;
+}
+
+.btn-midias a {
+    gap: 10px
+}
+
+.certificados {
+    gap: 10px;
+}
+
+.rodape{
+    font-size: 1.2rem;
+}
+}
